@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/disciplinas"
+        android:title="Disciplinas" />
+
+    <item
+        android:id="@+id/mapsscreen"
+        android:title="Mapa" />
+
+    <item
+        android:id="@+id/signout"
+        android:title="Deslogar" />
+
+</menu>
