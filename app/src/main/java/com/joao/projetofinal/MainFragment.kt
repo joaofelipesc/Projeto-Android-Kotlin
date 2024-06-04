@@ -39,9 +39,20 @@ class MainFragment : Fragment() {
         // Define o comportamento dos botões do menu
         binding.toolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.action_logout -> {
+                R.id.disciplinas -> {
+                    // Navegue para a tela de disciplinas
+                    Toast.makeText(requireContext(), "Disciplinas", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.mapsscreen -> {
+                    // Navegue para a tela do mapa
+                    Toast.makeText(requireContext(), "Mapa", Toast.LENGTH_SHORT).show()
+                    true
+                }
+                R.id.signout -> {
+                    // Desloga o usuário
                     auth.signOut()
-                    // Navega para a tela de login
+                    // Navegue para a tela de login
                     findNavController().navigate(R.id.action_mainFragment_to_loginFragment2)
                     true
                 }
@@ -60,21 +71,5 @@ class MainFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.menu_item_1 -> {
-                // Ação para o item 1
-                Toast.makeText(context, "Opção 1 selecionada", Toast.LENGTH_SHORT).show()
-                true
-            }
-            R.id.menu_item_2 -> {
-                // Ação para o item 2
-                Toast.makeText(context, "Opção 2 selecionada", Toast.LENGTH_SHORT).show()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

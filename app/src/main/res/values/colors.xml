@@ -2,4 +2,54 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores básicas -->
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF008000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magenta">#FFFF00FF</color>
+    <color name="gray">#FF808080</color>
+
+    <!-- Tons de cinza -->
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="dark_gray">#FF696969</color>
+
+    <!-- Cores primárias -->
+    <color name="primary_dark">#FF005693</color>
+    <color name="primary">#FF0069C0</color>
+    <color name="primary_light">#FF458BDB</color>
+
+    <!-- Cores de destaque -->
+    <color name="accent">#FF00BCD4</color>
+    <color name="accent_light">#FF4FC3F7</color>
+    <color name="accent_dark">#FF008BA3</color>
+
+    <!-- Outras cores -->
+    <color name="orange">#FFFFA500</color>
+    <color name="purple">#FF800080</color>
+    <color name="brown">#FFA52A2A</color>
+    <color name="pink">#FFFFC0CB</color>
+    <color name="teal">#FF008080</color>
+    <color name="lime">#FF00FF00</color>
+    <color name="indigo">#FF4B0082</color>
+    <color name="amber">#FFFFC107</color>
+    <color name="blue_grey">#FF607D8B</color>
+    <color name="grey">#FFBDBDBD</color>
+    <color name="light_blue">#FF81D4FA</color>
+    <color name="light_green">#FF81C784</color>
+    <color name="light_purple">#FFB388FF</color>
+    <color name="light_red">#FFEF9A9A</color>
+    <color name="light_yellow">#FFFFF176</color>
+    <color name="deep_orange">#FFFF8A65</color>
+    <color name="deep_purple">#FF6A1B9A</color>
+    <color name="green_grey">#FF669999</color>
+    <color name="red_grey">#FF996666</color>
+    <color name="yellow_grey">#FF999966</color>
+
+
+    <!-- Cores de fundo -->
+    <color name="background">#FFEEEEEE</color>
+
 </resources>
