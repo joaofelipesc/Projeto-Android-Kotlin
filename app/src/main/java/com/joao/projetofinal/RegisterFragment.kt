@@ -49,7 +49,7 @@ class RegisterFragment : Fragment() {
 
             auth.createUserWithEmailAndPassword(email,senha1).addOnCompleteListener {task->
                 if(task.isSuccessful){
-                    findNavController().popBackStack()
+                    findNavController().navigate(R.id.action_registerFragment2_to_splashFragment)
                 }
                 else{
                     Toast.makeText(activity, task.exception?.message, Toast.LENGTH_SHORT).show()

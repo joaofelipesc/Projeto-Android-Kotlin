@@ -18,7 +18,7 @@
             android:background="@drawable/bg_gradient_toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
             app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/menu_toolbar"
+            app:menu="@menu/menu_toolbar_main_fragment"
             app:title="@string/app_name"
             app:titleTextColor="@android:color/white" />
 

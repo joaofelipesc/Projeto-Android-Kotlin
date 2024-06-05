@@ -43,9 +43,11 @@ class SplashFragment : Fragment() {
 
     private fun checkAuth() {
         val rota = if (auth.currentUser == null) {
+            binding.txtTextoBoasVindas.setText("APP DESENVOLVIDO POR João Felipe Silva Coromberk. RA:23319")
             R.id.action_splashFragment_to_loginFragment2
+
         } else {
-            binding.txtTextoBoasVindas.setText("Bem Vindo" + auth.currentUser?.email+ "! RA: 23319")
+            binding.txtTextoBoasVindas.setText("Bem Vindo" + auth.currentUser?.email+ "  APP DESENVOLVIDO POR João Felipe Silva Coromberk. RA:23319")
             R.id.action_splashFragment_to_mainFragment
         }
         Handler(Looper.getMainLooper()).postDelayed({

@@ -25,6 +25,12 @@
         <action
             android:id="@+id/action_mainFragment_to_loginFragment2"
             app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_disciplinasFragment"
+            app:destination="@id/disciplinasFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment2"
@@ -41,10 +47,33 @@
         android:id="@+id/registerFragment2"
         android:name="com.joao.projetofinal.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment2_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.joao.projetofinal.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_mapsFragment_to_disciplinasFragment"
+            app:destination="@id/disciplinasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/disciplinasFragment"
+        android:name="com.joao.projetofinal.models.DisciplinasFragment"
+        android:label="fragment_disciplinas"
+        tools:layout="@layout/fragment_disciplinas" >
+        <action
+            android:id="@+id/action_disciplinasFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_disciplinasFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
 </navigation>

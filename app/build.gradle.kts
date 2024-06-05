@@ -42,7 +42,9 @@ android {
 }
 
 dependencies {
-    implementation ("com.google.firebase:firebase-database-ktx") // Para o Firebase Realtime Database
+    implementation ("com.google.firebase:firebase-database-ktx")
+    implementation ("com.google.android.gms:play-services-maps:18.0.0")
+    implementation ("com.google.android.gms:play-services-location:20.0.0")
     implementation ("com.google.firebase:firebase-firestore:24.4.0")
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics")

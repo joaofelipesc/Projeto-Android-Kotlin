@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -41,11 +40,13 @@ class MainFragment : Fragment() {
             when (menuItem.itemId) {
                 R.id.disciplinas -> {
                     // Navegue para a tela de disciplinas
-                    Toast.makeText(requireContext(), "Disciplinas", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(R.id.action_mainFragment_to_disciplinasFragment)
+
                     true
                 }
                 R.id.mapsscreen -> {
                     // Navegue para a tela do mapa
+                    findNavController().navigate(R.id.action_mainFragment_to_mapsFragment)
                     Toast.makeText(requireContext(), "Mapa", Toast.LENGTH_SHORT).show()
                     true
                 }
@@ -63,7 +64,7 @@ class MainFragment : Fragment() {
 
     // Infla o menu do Fragment
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_toolbar, menu)
+        inflater.inflate(R.menu.menu_toolbar_main_fragment, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 

@@ -20,7 +20,7 @@
         <TextView
             android:id="@+id/txtTextoBoasVindas"
             android:layout_width="match_parent"
-            android:layout_height="136dp"
+            android:layout_height="297dp"
             android:fontFamily="@font/orienta"
             android:textColor="#000000"
             android:textSize="29sp" />
